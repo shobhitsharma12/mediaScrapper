@@ -1,0 +1,11 @@
+CREATE database ScrappedData;
+
+use ScrappedData;
+
+CREATE TABLE IF NOT EXISTS `MediaScrapper` (
+         Id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+         ImageUrl varchar(1000) NOT NULL,
+         ImageName varchar(1000) NOT NULL,
+         WebURL varchar(1000) NOT NULL,
+         CreatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+     ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
